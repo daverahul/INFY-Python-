@@ -1,0 +1,14 @@
+def form_traiangle(num1,num2,num3):
+    success="Traingle can be formed"
+    failure="Triangle can't be formed"
+    if(num1>=num2+num3):
+        return failure
+    elif(num2>=num1+num3):
+        return failure
+    elif(num3>=num2+num1):
+        return failure
+    else:
+        return success
+    
+result =form_traiangle(3,3,5)
+print(result)
